@@ -1,3 +1,25 @@
+  header{
+    margin: auto;
+    width: 800px;
+    border-bottom: 2px dashed lightgray;
+    padding-bottom: 10px;
+    h2{
+      padding-top: 20px;
+    }
+
+    @media @mobile{
+      width: 500px;
+      margin: auto;
+      padding-left: 5%;
+      font-weight: bold;
+      padding-right: 5%;
+      #busPhoto{
+        width: 95%;
+      }
+
+    }
+  }
+
 .home {
 
   .content-section {
@@ -5,8 +27,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -56,6 +76,51 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+            .buttons(white, teal, 80%);
+      }
+    }
+
+  }
+    
+  @media @mobile{
+  
+    .content-section{
+      flex-direction: column;  
+      font-weight: bold;
+      width: 500px;
+      .text-content{
+        width: 90%;
+        margin: auto;
+      }
+      .img-content{
+        width: 90%;
+        margin: auto;
+      }
+    }
+
+    .content-destination{
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .content-pick{
+      flex-direction: column;
+      .destination{
+        font-weight: bold;
+        width: 75%;
+        margin: auto;
+        padding-bottom: 20px;
+      }
+    }
+
+    .inverse-content{
+      flex-direction: column-reverse;
+    }
+
+    .btn{
+      .buttons(white, teal, 100%);
     }
   }
+  
 }// home
